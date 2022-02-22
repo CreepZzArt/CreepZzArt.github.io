@@ -44,17 +44,20 @@ body {
 	width: 980px;
 	margin: 0 auto;
 	margin-top: 50px;
+	transition: all 0.3s;
 }
 .list a {
     color: #6a6a6a;
     display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all 0.3s;
 }
 .list ul{
 	margin-top: 30px;
 	display: flex;
 	flex-wrap: wrap;
+	transition: all 0.3s;
 }
 .list ul li {
     border-radius: 15px;
@@ -67,7 +70,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 25px;
-	transition: transform .3s;
 }
 .list ul li a {
     display: flex;
@@ -93,4 +95,16 @@ body {
 	width: auto;
 	height: 20px;
 	margin-left: 10px;
+}
+/* !!!!!!!!!!!!!!!!!CSS动画!!!!!!!!!!!!!!!!!!!!*/
+.list ul li:hover {
+	width: 220px;
+	height: 220px;
+	font-size: 40px;
+    transition: all 0.3s;
+}
+.githunico:hover{
+	width: 30px;
+	height: 30px;
+	transition: all 0.3s;
 }

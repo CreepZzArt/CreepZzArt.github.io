@@ -11,6 +11,9 @@ html {
 body {
     background: #f7f7f7;
 }
+h2 {
+    color: rgba(41, 41, 41, 0.664);
+}
 .name {
     font-size: 60px;
 	margin:auto
@@ -41,9 +44,9 @@ body {
 	align-items: center;
 }
 .list{
-	width: 980px;
-	margin: 0 auto;
-	margin-top: 50px;
+	min-width: 800px;
+    min-height: 200px;
+	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -98,6 +101,50 @@ body {
 	width: auto;
 	height: 20px;
 	margin-left: 10px;
+}
+.Blog-list{
+    border-radius: 15px;
+    width: 800px;
+    height: 400px;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    margin-top:-10px;
+    background-color: rgba(241, 241, 241, 0.8);
+    
+}
+.Blog-img1{
+    border-radius: 30px;
+    width: 800px;
+    height: 250px;
+    background-image: url("../img/Sky.jpg");
+    background-size: cover;
+}
+.Blog-text{
+    width: 780px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgba(241, 241, 241, 0.8);
+
+}
+.Blog-content p{
+    width: 780px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: rgba(26, 26, 26, 0.9);
+}
+.Blog-Time p{
+    width: 780px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: -10px;
+    color: rgba(26, 26, 26, 0.548);
+}
+.Blog-img1:hover{
+    width: 800px;
+	height: 300px;
+	transition: all 0.3s;
 }
 .list ul li:hover {
 	width: 200px;

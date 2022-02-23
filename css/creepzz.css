@@ -44,6 +44,9 @@ body {
 	width: 980px;
 	margin: 0 auto;
 	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	transition: all 0.3s;
 }
 .list a {
@@ -54,19 +57,19 @@ body {
 	transition: all 0.3s;
 }
 .list ul{
-	margin-top: 30px;
+	margin-top: 0px;
 	display: flex;
 	flex-wrap: wrap;
 	transition: all 0.3s;
 }
 .list ul li {
-    border-radius: 15px;
+    border-radius: 30px;
     background: #c8c8c8;
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     margin-right: 32px;
-    margin-bottom: 332px;
+    margin-bottom: 100px;
     justify-content: center;
     align-items: center;
     font-size: 25px;
@@ -97,8 +100,8 @@ body {
 	margin-left: 10px;
 }
 .list ul li:hover {
-	width: 220px;
-	height: 220px;
+	width: 200px;
+	height: 200px;
 	font-size: 40px;
     transition: all 0.3s;
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="author" content="CreepZzL">
+	<meta name="description" content="Blog && Happy Html" />
+	<meta charset="utf-8" >
+    <title>2022\2\26</title>
+    <link rel="shortcut icon" href="../CreepZz.ico" />
+    <link rel="stylesheet" href="../css/01.css"/>
+</head>
+<body>
+	<div class="body-out">
+        <div class="body-inner">
+            <div class="Blog-title">曹孟德青梅煮酒</div>
+            <div class="Blog-date">2022/2/26</div>
+            <div class="Blog-img"></div>
+            <div class="Blog-content-title">
+                <h1>曹孟德青梅煮酒</h1>
+            </div>
+            <div class="Blog-sort">
+                <p>2021第三届浙江省高职院校新生联赛,属于是经典的结构体排序了</p>
+                <p>解法来讲并没有难的地方,但比赛的时候也是难道了我</p>
+                <p>程序代码如下:</p>
+            </div>
+            <div class="cpp">
+                <pre>
+                    <code>
+    #include&lt;iostream&gt;
+    #include&lt;algorithm&gt;
+    #include&lt;cstring&gt;
+    #pragma GCC optimize(2)
+    #define ll long long
+    using namespace std;
+    struct mate{
+        string name;
+        int F,IQ;
+    }a[1008];
+    int cmpF(mate a, mate b){
+        if(a.F == b.F){
+            if(a.IQ == b.IQ){
+                return a.name &lt; b.name;
+            }else{
+                return a.IQ &gt; b.IQ;
+                }
+        }else{
+            return a.F &gt; b.F;
+        }
+    }
+    int cmpIQ(mate a, mate b){
+        if(a.IQ == b.IQ){
+            if(a.F == b.F){
+                return a.name &lt; b.name;
+            }else{
+                return a.F &gt; b.F;
+            }
+
+        }else{
+            return a.IQ &gt; b.IQ;
+        }
+    }
+    int main(){
+        ll n, ans = 1;
+        while(cin &gt;&gt; n){
+            ans = 1;
+            for(int i = 1;i &lt;= n;i++){
+                cin &gt;&gt; a[i].name &gt;&gt; a[i].F &gt;&gt; a[i].IQ;
+            }
+            sort(a + 1,a + n + 1,cmpF);
+            for(int i = 1;i&lt;=n;i++){
+                if(a[i - 1].F == a[i].F &amp;&amp; a[i - 1].IQ == a[i].IQ /*&amp;&amp; i &lt; n*/){
+                    cout &lt;&lt; ans &lt;&lt; &quot; &quot; &lt;&lt; a[i].name &lt;&lt; &quot; &quot; &lt;&lt; a[i].F &lt;&lt; &quot; &quot; &lt;&lt; a[i].IQ &lt;&lt; endl;
+                }else{
+                    ans = i;
+                    cout &lt;&lt; ans &lt;&lt; &quot; &quot; &lt;&lt; a[i].name &lt;&lt; &quot; &quot; &lt;&lt; a[i].F &lt;&lt; &quot; &quot; &lt;&lt; a[i].IQ &lt;&lt; endl;
+                }
+            }
+            cout &lt;&lt; &quot;\n&quot;;
+            sort(a + 1,a + n + 1,cmpIQ);
+            ans = 1;
+            for(int i = 1;i&lt;=n;i++){
+                if(a[i - 1].IQ == a[i].IQ &amp;&amp; a[i - 1].F == a[i].F /*&amp;&amp; i &lt; n*/){
+                    cout &lt;&lt; ans &lt;&lt; &quot; &quot; &lt;&lt; a[i].name &lt;&lt; &quot; &quot; &lt;&lt; a[i].F &lt;&lt; &quot; &quot; &lt;&lt; a[i].IQ &lt;&lt; endl;
+                }else{
+                            ans = i;
+                    cout &lt;&lt; ans &lt;&lt; &quot; &quot; &lt;&lt; a[i].name &lt;&lt; &quot; &quot; &lt;&lt; a[i].F &lt;&lt; &quot; &quot; &lt;&lt; a[i].IQ &lt;&lt; endl;
+                }
+            }
+        }
+
+    }
+                </code>
+                </pre>
+            </div>
+            <div class="Blog-sortL">
+                <p>写完感觉自己灵魂都要被抽走了，但真的AC过后感觉心情非常的愉悦</p>
+                <p>可惜自己学业不精没能参加第一市赛</p>
+                <p>以后加油吧！继续努力!</p>
+            </div>
+
+            
+        </div>
+    </div>
+    <div class="foot">
+        Copyright © 2022 All Rights Reserved
+        <a href="https://github.com/CreepZzArt?tab=repositories">
+            <img class="githunico" src="../img/github.png">
+        </a>
+    </div>
+</body>
+</html>

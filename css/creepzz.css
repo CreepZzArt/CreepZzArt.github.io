@@ -7,12 +7,17 @@ p {
 }
 html {
     font-size: 15px;
+    height:100%;
 }
 body {
+    min-height:100%;
     background: #f7f7f7;
 }
 h2 {
     color: rgba(41, 41, 41, 0.664);
+}
+a {
+    text-decoration:none
 }
 .name {
     font-size: 60px;
@@ -87,15 +92,19 @@ h2 {
     line-height: 70px;
 }
 .foot {
+    margin-top: 100px;
     background: #fff;
-    width: auto;
-    height: 80px;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
     color: #6A6A6A;
+    border-top: 1px solid #ddd;
+    position: absolute;
+    padding: 20px 0;
+    
 }
 .githunico{
 	width: auto;
@@ -109,10 +118,11 @@ h2 {
     margin-bottom: 50px;
     margin: 0 auto;
     margin-top:-10px;
-    background-color: rgba(241, 241, 241, 0.8);
-    
+    background-color: rgba(211, 210, 210, 0.8);
+    overflow: hidden; /*溢出隐藏*/
 }
 .Blog-img1{
+    
     border-radius: 15px;
     width: 800px;
     height: 250px;
@@ -120,13 +130,18 @@ h2 {
     background-size: cover;
 }
 .Blog-text{
+    
     width: 780px;
     height: 30px;
     margin: 0 auto;
-    margin-top: 10px;
-    background-color: rgba(241, 241, 241, 0.8);
-
+    text-align:center;
+    
 }
+.Blog-text p{
+    margin-top: 10px;
+    color: #000;
+}
+
 .Blog-content p{
     width: 780px;
     height: 30px;
@@ -134,16 +149,24 @@ h2 {
     margin-top: 15px;
     color: rgba(26, 26, 26, 0.9);
 }
-.Blog-Time p{
+.Blog-Time{
     width: 780px;
     height: 30px;
     margin: 0 auto;
-    margin-top: -10px;
+    margin-top: 60px;
+    font-size: 18px;
+    color: rgba(26, 26, 26, 0.548);
+}
+.Blog-Time p{
     color: rgba(26, 26, 26, 0.548);
 }
 .Blog-img1:hover{
     width: 800px;
 	height: 300px;
+	transition: all 0.3s;
+}
+.Blog-text:hover{
+    font-size: 18px;
 	transition: all 0.3s;
 }
 .list ul li:hover {

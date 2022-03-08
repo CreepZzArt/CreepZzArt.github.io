@@ -21,7 +21,7 @@ a {
 }
 .name {
     font-size: 60px;
-	margin:auto
+	margin:auto;
 }
 .header {
     width: auto;
@@ -92,8 +92,8 @@ a {
     line-height: 70px;
 }
 .foot {
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
     margin-top: 100px;
-    background: #fff;
     width: 100%;
     text-align: center;
     display: flex;
@@ -164,6 +164,9 @@ a {
     width: 800px;
 	height: 300px;
 	transition: all 0.3s;
+    -webkit-filter : blur(2px);/* Chrome, Safari, Opera */
+    filter : blur(2px)
+    /*滤镜*/
 }
 .Blog-text:hover{
     font-size: 18px;

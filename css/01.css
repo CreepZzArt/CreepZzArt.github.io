@@ -4,7 +4,6 @@
 }/* 处理白色的边框 */
 body {
     min-height:100%;
-    background: #f7f7f7;
 }
 html {
     font-size: 15px;
@@ -100,8 +99,8 @@ code {
 	margin-left: 10px;
 }
 .foot {
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
     margin-top: 0px;
-    background: #fff;
     width: 100%;
     text-align: center;
     display: flex;
@@ -127,5 +126,5 @@ code {
     right: 46%;
     bottom: 98%;
     transition: all 0.3s;
-    background-color: #1A98FF;
+    background: linear-gradient(-90deg, #29bdd9 0%, #276ace 100%);
 }

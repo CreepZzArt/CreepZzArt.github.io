@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}/* 处理白色的边框 */
+body {
+    min-height:100%;
+}
+html {
+    font-size: 15px;
+    height:100%;
+}
+div {
+    display: block;
+}
+pre {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+	font-family: Arial, Helvetica, sans-serif;
+}
+code {
+	display: block;
+    padding: 0.5em;
+    color: rgb(70, 70, 70);
+	background-color: #d6d6d6;
+}
+.body-out {
+	height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+	background-color: #ffffff;
+}
+.body-inner {
+	width: 1130px;
+    background-color: rgba(236, 236, 236, 0.301);
+}
+.Blog-title {
+	text-align: center;
+    font-size: 2.15em;
+    margin-bottom: 20px;
+	margin-top: 50px;
+}
+.Blog-date {
+	text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+	color: #898FA0;
+    line-height: 3;
+    position: relative;
+}
+.Blog-img {
+	width: 1130px;
+	height: 400px;
+	background-image: url("../img/loser.jpg");
+	background-size: cover;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.Blog-content-title {
+	margin-left: 20px;
+	margin-top: 10px;
+	
+}
+.Blog-sort {
+	margin-left: 20px;
+}
+.Blog-sort p{
+	font-size: 20px;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.Blog-sortL {
+	margin-left: 20px;
+}
+.Blog-sortL p{
+	font-size: 20px;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	margin-top: -15px;
+}
+.cpp {
+	width: 890px;
+	margin-left: 100px;
+	margin-top: -50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.githunico{
+	width: auto;
+	height: 20px;
+	margin-left: 10px;
+}
+.foot {
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #6A6A6A;
+    border-top: 1px solid #ddd;
+    position: absolute;
+    padding: 20px 0;
+    
+}
+.githunico:hover{
+	width: 30px;
+	height: 30px;
+	transition: all 0.3s;
+}
+.Blog-date::after {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 46%;
+    right: 46%;
+    bottom: 98%;
+    transition: all 0.3s;
+    background: linear-gradient(-90deg, #29bdd9 0%, #276ace 100%);
+}

@@ -121,12 +121,29 @@ a {
     background-color: rgba(211, 210, 210, 0.8);
     overflow: hidden; /*溢出隐藏*/
 }
+.Blog2-list{
+    border-radius: 15px;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgba(211, 210, 210, 0.8);
+    overflow: hidden; /*溢出隐藏*/
+}
 .Blog-img1{
     
     border-radius: 15px;
     width: 800px;
     height: 250px;
     background-image: url("../img/SKy.jpg");
+    background-size: cover;
+}
+.Blog2-img1{
+    
+    border-radius: 15px;
+    width: 800px;
+    height: 250px;
+    background-image: url("../img/loser.jpg");
     background-size: cover;
 }
 .Blog-text{
@@ -161,6 +178,14 @@ a {
     color: rgba(26, 26, 26, 0.548);
 }
 .Blog-img1:hover{
+    width: 800px;
+	height: 300px;
+	transition: all 0.3s;
+    -webkit-filter : blur(2px);/* Chrome, Safari, Opera */
+    filter : blur(2px)
+    /*滤镜*/
+}
+.Blog2-img1:hover{
     width: 800px;
 	height: 300px;
 	transition: all 0.3s;

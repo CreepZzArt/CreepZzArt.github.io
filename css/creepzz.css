@@ -135,7 +135,7 @@ a {
     border-radius: 15px;
     width: 800px;
     height: 250px;
-    background-image: url("../img/SKy.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/CreepZzArt/img/SKy.jpg");
     background-size: cover;
 }
 .Blog2-img1{
@@ -143,7 +143,7 @@ a {
     border-radius: 15px;
     width: 800px;
     height: 250px;
-    background-image: url("../img/loser.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/CreepZzArt/img/loser.jpg");
     background-size: cover;
 }
 .Blog-text{

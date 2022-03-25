@@ -52,7 +52,7 @@ code {
 .Blog-img {
 	width: 1130px;
 	height: 400px;
-	background-image: url("../img/SKy.jpg");
+	background-image: url("https://cdn.jsdelivr.net/gh/CreepZzArt/img/SKy.jpg");
 	background-size: cover;
 	border-radius: 10px;
 	margin-bottom: 10px;

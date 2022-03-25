@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("https://cdn.jsdelivr.net/gh/CreepZzArt/img/box-img.jpg") no-repeat;
+    background-size: cover;
+}/* 处理白色的边框 */
+.box{
+    width: 450px;
+    height: 410px;
+    border-radius: 2%;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.next{
+    margin-top: 50px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    animation: isp 1.3s linear 5s infinite alternate;
+    -webkit-animation: isp 1.3s linear 5s infinite alternate;
+}
+@keyframes isp {
+    0%, 40%, 100% { transform: translateY(0px); } 
+    20% { transform: translateY(30px); }
+} 
+@-webkit-keyframes isp {
+    0%, 40%, 100% { -webkit-transform: translateY(0px); } 
+    20% { -webkit-transform: translateY(30px); }
+} 
+.next a{
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+.box-img:hover{
+    -webkit-box-shadow: 5px 5px 50px 3px rgba(76,201,240,1);
+    -moz-box-shadow: 5px 5px 200px 3px rgba(76,201,240,1);
+    box-shadow: 5px 5px 50px 6px rgba(76,201,240,1);
+    transform: rotate(360deg);
+    transition: all 0.8s;
+}
+.box h1{
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    text-shadow: 0 3px 6px rgba(255, 255, 255, 0.3);
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.box li{
+    display: inline-block;
+    margin: 0px;
+    list-style: none;
+}
+.box li a{
+    margin:10px;
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+    font-size: 70px;
+    color: #b9b9b9;
+}
+
+body:before{
+    filter: blur(0px);
+    content: '';
+    background: url("https://cdn.jsdelivr.net/gh/CreepZzArt/img/box-img.jpg") no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    margin: auto;
+    background-position: center;
+    overflow: hidden;
+}
